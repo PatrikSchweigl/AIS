@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ais.motorcontroller2.PathActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Square1"
+        android:id="@+id/Square1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Square2"
+        android:id="@+id/Square2"
+        android:layout_alignBottom="@+id/Square1"
+        android:layout_toEndOf="@+id/Square1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Square3"
+        android:id="@+id/Square3"
+        android:layout_alignTop="@+id/Square2"
+        android:layout_toEndOf="@+id/Square2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eight"
+        android:id="@+id/Eight"
+        android:layout_alignBottom="@+id/Square3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Square Obstacle Test"
+        android:id="@+id/SquareObstacleTest"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/Square1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Square Obstacle Avoidance"
+        android:id="@+id/SquareObstacleAvoidance"
+        android:layout_below="@+id/SquareObstacleTest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ValueX"
+        android:layout_below="@+id/SquareObstacleAvoidance"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignEnd="@+id/Square2"
+        android:text="X-Value" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ValueY"
+        android:layout_below="@+id/ValueX"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/ValueX"
+        android:text="Y-Value" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive X/Y cm"
+        android:id="@+id/Drive"
+        android:layout_alignBottom="@+id/ValueY"
+        android:layout_alignEnd="@+id/Eight"
+        android:layout_marginEnd="30dp" />
+
+</RelativeLayout>
